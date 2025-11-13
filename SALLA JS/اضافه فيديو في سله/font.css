@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'DINNextLTArabic';
+    src: url('https://arbfonts.com/wp-content/fonts/new-arabic-fonts/DINNextLTArabic-Regular-3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DINNextLTArabic', sans-serif;
+}
