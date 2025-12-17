@@ -1,0 +1,74 @@
+.s-block__title ,
+.s-slider-block__title,
+.s-reviews-header-wrapper{
+    justify-content:center;
+}
+.s-slider-block__title-left{
+    display:none;
+}
+.s-block__title .right-side ,
+.s-slider-block__title-right,
+.s-slider-block__title h2{
+    padding:0;
+}
+.s-reviews-header{
+    margin:0;
+}
+.s-block__title h2 ,
+.s-slider-block__title h2,
+.s-reviews-header{
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media(max-width:768px){
+.s-block__title h2 ,
+.s-slider-block__title h2,
+.s-reviews-header{
+  font-size: 22px;
+}
+}
+.s-block__title h2::before,
+.s-block__title h2::after,
+.s-slider-block__title h2::before,
+.s-slider-block__title h2::after,
+.s-reviews-header::before,
+.s-reviews-header::after{
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 80px;
+  height: 2px;
+  background: #7d4bcc; /* اللون البنفسجي */
+}
+
+.s-block__title h2::before,
+.s-slider-block__title h2::before,
+.s-reviews-header::before{
+  right: 50%;
+  margin-right: 15px;
+}
+
+.s-block__title h2::after,
+.s-slider-block__title h2::after,
+.s-reviews-header::after{
+  left: 50%;
+  margin-left: 15px;
+}
+
+/* الدايرة */
+.s-block__title h2 .circle ,
+.s-slider-block__title h2 .circle ,
+.s-reviews-header .circle{
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #7d4bcc;
+  border-radius: 50%;
+  background: #fff;
+}

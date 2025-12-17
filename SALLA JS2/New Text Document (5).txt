@@ -1,0 +1,75 @@
+/* Add custom Js code below */ 
+/* Add custom Js code below */ 
+const section = document.createElement('section');
+section.classList.add('full-width-video-section'); 
+section.style.position = 'relative';  
+section.style.marginTop = '0';
+
+// Create the video element
+const video = document.createElement('video');
+video.src = 'https://github.com/salahreda-1/videos/raw/refs/heads/main/IMG_5271%20(online-video-cutter.com).mp4'; 
+video.autoplay = true; 
+video.muted = true; 
+video.loop = true; 
+video.style.width = '100%'; 
+video.style.height = '100%'; 
+
+section.appendChild(video);
+
+// Create a container for text content
+const textContainer = document.createElement('div');
+textContainer.style.position = 'absolute';
+textContainer.style.top = '66%';
+textContainer.style.left = '50%';
+textContainer.style.transform = 'translate(-50%, -50%)';
+textContainer.style.textAlign = 'center';
+textContainer.style.color = '#fff';
+
+// Create the heading element
+const heading = document.createElement('h1');
+heading.textContent = ' كل تفصيلة.. مصممة لأجلك';  // H1 text
+heading.style.fontSize = '40px';
+heading.style.marginBottom = '10px';
+
+// Create the paragraph element
+const paragraph = document.createElement('p');
+paragraph.textContent = 'عباياتنا ليست فقط للظهور، بل للتألق. مصنوعة بحب، وموجهة لكل امرأة تفتخر بأناقتها العربية';  // P text
+paragraph.style.fontSize = '25px';
+paragraph.style.marginBottom = '20px';
+
+// Append heading and paragraph to the text container
+textContainer.appendChild(heading);
+textContainer.appendChild(paragraph);
+
+// Create the button element
+const button = document.createElement('button');
+button.textContent = 'تسوقي الان';  // Button text
+button.style.padding = '10px 20px';
+button.style.backgroundColor = '#876c56';  
+button.style.color = '#fff';
+button.style.border = 'none';
+button.style.borderRadius = '5px';
+button.style.fontSize = '16px';
+button.style.cursor = 'pointer';
+
+// Button hover effect
+button.addEventListener('mouseover', () => {
+    button.style.backgroundColor = '#2980b9';  
+});
+button.addEventListener('mouseout', () => {
+    button.style.backgroundColor = '#3498db';  
+});
+
+// Append the button to the text container
+textContainer.appendChild(button);
+
+// Append text container to the section
+section.appendChild(textContainer);
+
+// Insert the section into the targetDiv
+const targetDiv = document.querySelector('.weeklyOffers');
+if (targetDiv) {
+    targetDiv.parentNode.insertBefore(section, targetDiv);
+} else {
+    console.error('Element with class "f-flex" not found.');
+}

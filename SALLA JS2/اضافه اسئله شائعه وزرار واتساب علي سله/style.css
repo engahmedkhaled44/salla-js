@@ -1,0 +1,103 @@
+
+.FAQ {
+    display:flex;
+    justify-content:center;
+    width: 100%;
+}        
+        
+.faq-accordion {
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 70%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  background: linear-gradient(90deg, #597961, #263028);
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 20px;
+  background: #222;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.faq-question svg {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active svg {
+  transform: rotate(180deg);
+}
+
+
+
+
+  /* WhatsApp floating button styles */
+  .salla-wa-box {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .salla-wa-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform .14s ease, box-shadow .14s ease;
+    overflow: hidden;
+  }
+
+  .salla-wa-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.28);
+  }
+
+  .salla-wa-btn img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+
+  .salla-wa-text {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .salla-wa-btn {
+      width: 70px;
+      height: 70px;
+    }
+    .salla-wa-text {
+      font-size: 14px;
+    }
+  }

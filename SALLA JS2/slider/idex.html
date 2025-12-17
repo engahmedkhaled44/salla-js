@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        background: #e2e2e2;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 600px;
+        max-width: 100%;
+        padding-top: 150px;
+        padding-bottom: 50px;
+      }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+    
+      .slider{
+        display: flex;
+        justify-content: center;
+      }
+    
+        </style>
+<body>
+    
+    <div class="slider">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e712ca93edd202526b934b70869d0c92&auto=format&fit=crop&w=1045&q=80)"></div>
+          <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1497030855747-0fc424f89a4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bdda607a8b1c23f94436b0743cea878a&auto=format&fit=crop&w=1050&q=80)"></div>
+          <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1524287515726-d6bd6805ad27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=00cb23a024b5c3b6be8d6ef8f858a95f&auto=format&fit=crop&w=964&q=80)"></div>
+          <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1491166617655-0723a0999cfc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a6f2b3e1a41e636e0cebfead997d5a6b&auto=format&fit=crop&w=1050&q=80)"></div>
+          <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1452826942781-56e3f80f6a35?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=de2f80f0542c3a93696e183dbe199a18&auto=format&fit=crop&w=1051&q=80)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="file.js"></script>
+</body>
+<script>
+
+    var options = {
+        effect: "coverflow",
+        initialSlide: 2,
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        coverflowEffect: {
+      
+          initialSlide: 3,
+              rotate: 0,
+          stretch: 5,
+          depth:50,
+          modifier: 5,
+          slideShadows: true
+        },
+                      breakpoints: {
+      
+                        768: { slidesPerView: 2, spaceBetween: 5 },
+                          350: { slidesPerView: 2, spaceBetween: 5 },
+                      }
+      }
+      
+      var swiper = new Swiper(".swiper-container", options);
+    
+        </script>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+
+    body {
+        background: #e2e2e2;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 485px;
+        max-width: 100%;
+        padding-top: 150px;
+        padding-bottom: 50px;
+      }
+      .swiper-slide {
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        width: 240px !important;
+        height: 255px;
+      }
+    
+      .slider{
+        display: flex;
+        justify-content: center;
+      }
+    
+        </style>
+</head>
+
+<body>
+    
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+ <style>
+
+ body {
+     background: #e2e2e2;
+     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     font-size: 14px;
+     color:#000;
+     margin: 0;
+     padding: 0;
+   }
+   .swiper-container {
+     width: 485px;
+     max-width: 100%;
+     padding-top: 50px;
+     padding-bottom: 50px;
+   }
+   .swiper-slide {
+     background-position:center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+     width: 240px !important;
+     height: 255px;
+     background-color: #fff !important;
+   }
+ 
+
+
+   
+   .slider{
+     display: flex;
+     justify-content: center;
+   }
+ 
+     </style>
+
+    <div class="slider">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%ba%d8%b3%d8%a7%d9%84%d8%a7%d8%aa-%d9%85%d9%84%d8%a7%d8%a8%d8%b3//"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548494.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%ab%d9%84%d8%a7%d8%ac%d8%a7%d8%aa/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548495.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%b5%d8%ba%d9%8a%d8%b1%d9%87/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548496.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%a8%d9%84%d8%aa-%d8%a5%d9%86/%d8%ba%d8%b3%d8%a7%d9%84%d8%a9-%d8%b5%d8%ad%d9%88%d9%86-%d8%a8%d9%84%d8%aa-%d8%a5%d9%86/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548497.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%a8%d9%84%d8%aa-%d8%a5%d9%86/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548498.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9/%d9%85%d8%b1%d8%a7%d9%88%d8%ad/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548499.png) ; display: block;"></a>
+            <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9/%d8%a7%d9%84%d9%85%d9%83%d8%a7%d9%86%d8%b3-%d8%a7%d9%84%d9%83%d9%87%d8%b1%d8%a8%d8%a7%d8%a6%d9%8a%d8%a9/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548500.png) ; display: block;"></a>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d9%85%d9%83%d9%8a%d9%81%d8%a7%d8%aa/%d9%85%d9%83%d9%8a%d9%81%d8%a7%d8%aa-%d8%b5%d8%ad%d8%b1%d8%a7%d9%88%d9%8a/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548493.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d9%86%d8%b4%d8%a7%d9%81%d8%a7%d8%aa/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548492.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%a3%d9%81%d8%b1%d8%a7%d9%86/%d9%85%d9%88%d8%a7%d9%82%d8%af-%d8%b3%d8%b7%d8%ad%d9%8a/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548491.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d9%81%d8%b1%d9%8a%d8%b2%d8%b1%d8%a7%d8%aa/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548490.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%83%d8%a8%d9%8a%d8%b1%d8%a9/%d8%ab%d9%84%d8%a7%d8%ac%d8%a7%d8%aa/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548489.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%b4%d8%a7%d8%b4%d8%a7%d8%aa-%d9%88%d9%85%d9%84%d8%ad%d9%82%d8%a7%d8%aa%d9%87%d8%a7/%d8%b4%d8%a7%d8%b4%d8%a7%d8%aa-%d8%b0%d9%83%d9%8a%d8%a9/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548486.png) ; display: block;"></a>
+              <a class="swiper-slide" href="https://alghaith.co/product-category/%d9%85%d9%83%d9%8a%d9%81%d8%a7%d8%aa/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Group-1618873394-1.png) ; display: block;"></a>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="slider">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9/%d8%a7%d9%84%d9%85%d8%af%d8%a7%d9%81%d8%a6/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548501.png) ; display: block;"></a>
+                <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%b5%d8%ba%d9%8a%d8%b1%d9%87/%d8%a3%d8%ac%d9%87%d8%b2%d8%a9-%d8%a7%d9%84%d9%85%d8%b7%d8%a8%d8%ae/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548502.png) ; display: block;"></a>
+                <a class="swiper-slide" href="https://alghaith.co/product-category/%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d9%87-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%b5%d8%ba%d9%8a%d8%b1%d9%87/"    style="background-image:url(https://alghaith.co/wp-content/uploads/2025/01/Frame-1820548503.png) ; display: block;"></a>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+  
+
+<script>
+
+    var options = {
+        effect: "coverflow",
+        initialSlide: 3,
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        coverflowEffect: {
+      
+          initialSlide: 3,
+              rotate: 0,
+          stretch: 5,
+          depth:100,
+          modifier: 5,
+          slideShadows: true
+        },
+                      breakpoints: {
+      
+                        768: { slidesPerView:2 , spaceBetween: 3 },
+                          350: { slidesPerView:2 , spaceBetween: 3 },
+                      }
+      }
+      
+      var swiper = new Swiper(".swiper-container", options);
+    
+        </script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="file.js"></script>
+</body>
+
+</html>
